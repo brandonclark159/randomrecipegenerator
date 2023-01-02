@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*,
+::before,
+::after {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Oswald', sans-serif;
+   background:  #ECDED1;
+   text-align: center;
+}
+
+.ignis {
+   padding-top: 15px;
+   padding-bottom: 1.6rem;
+   color: #B17287;
+   text-shadow: 1px 1px 2px black;
+}
+
+h1, .btn, #recipeTitleOutput, #ingredientOutput {
+   animation: anime 1s ease-out;
+}
+
+.btn {
+   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.8);
+}
+
+.btn:hover {
+   background-color: #455275;
+}
+
+.recipe-container {
+   width: 350px;
+   background-color: #B17287;
+   color: #fff;
+   position: relative;
+   margin: auto;
+   margin-top: 2em;
+   padding: 6rem 2rem;
+   border: 1px solid black;
+   border-radius: 2px;
+   box-shadow: 0 1px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+#recipeTitleOutput {
+   letter-spacing: 2px;
+   font-size: 1.8rem;
+   text-shadow: 1px 1px 2px black;
+}
+
+#ingredientOutput {
+   letter-spacing: 2px;
+   font-size: 1.0rem;
+   text-shadow: 1px 1px 2px black;
+}
+
+@keyframes anime {
+   from {
+      opacity: 0;
+      transform: scale(0);
+   } to {
+      opacity: 1;
+      transform: scale(1);
+   }
+   
+}
